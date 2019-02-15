@@ -24,14 +24,7 @@
       "lib/underscore/underscore.js"
     ]
   },
-  "dependencies": {
-    "chai": "^4.2.0",
-    "husky": "^0.14.3",
-    "jsdom": "^12.0.0",
-    "lint-staged": "^7.2.2",
-    "mocha": "^5.2.0",
-    "sinon": "^6.3.5"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codestates/im10-2019-01-subclass-dance-party.git"
@@ -44,10 +37,11 @@
   "homepage": "https://github.com/codestates/im10-2019-01-subclass-dance-party#readme",
   "devDependencies": {
     "eslint": "^5.11.1",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "chai": "^4.2.0",
+    "husky": "^0.14.3",
+    "jsdom": "^12.0.0",
+    "lint-staged": "^7.2.2",
+    "mocha": "^5.2.0",
+    "sinon": "^6.3.5"
   }
 }
