@@ -11,7 +11,7 @@ describe("student", () => {
   });
 
   it("put correct class on student.json", () => {
-    const rawClass = "기수를 숫자만! 입력해주세요! 예)10";
+    const rawClass = "기수를 숫자만! 입력해주세요! 예)11";
     expect(studentData.theClass).not.to.equal(rawClass);
   });
 });

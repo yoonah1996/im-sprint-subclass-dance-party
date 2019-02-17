@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "mocha spec/test.js",
+    "test": "node spec/getReview.js && mocha spec/test.js",
     "precommit": "lint-staged",
     "lint": "eslint src"
   },
