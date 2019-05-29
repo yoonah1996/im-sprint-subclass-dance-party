@@ -9,7 +9,7 @@ const { HTMLElement } = (new JSDOM('')).window;
 
 describe('functional blinkyDancer', function() {
 
-  var blinkyDancer, clock;
+  var blinkyDancer;
   var timeBetweenSteps = 100;
 
   beforeEach(function() {
@@ -21,17 +21,9 @@ describe('functional blinkyDancer', function() {
     expect(blinkyDancer.$node).to.be.an.instanceof(HTMLElement);
   });
 
-  describe('dance', function() {
-    it('1초에 한번은 step 메소드가 불려야 합니다', function() {
-      sinon.spy(blinkyDancer, 'step');
-      clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
-      expect(blinkyDancer.step.callCount).to.be.equal(0);
-
-      clock.tick(timeBetweenSteps);
-      expect(blinkyDancer.step.callCount).to.be.equal(1);
-
-      clock.tick(timeBetweenSteps);
-      expect(blinkyDancer.step.callCount).to.be.equal(2);
-    });
+  it('setPosition 메소드를 사용할 수 있어야 합니다', function() {
+    sinon.spy(blinkyDancer, 'setPosition');
+    blinkyDancer.setPosition(10, 10);
+    expect(blinkyDancer.setPosition.called).to.be.true;
   });
 });
