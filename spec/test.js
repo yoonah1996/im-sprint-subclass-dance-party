@@ -1,4 +1,3 @@
-require('./blinkyDancerFunctionalSpec');
-require('./blinkyDancerPseudoclassicalSpec');
-require('./blinkyDancerClassSpec');
-require('./studentsDataSpec')
+require("./blinkyDancerFunctionalSpec");
+require("./blinkyDancerPseudoclassicalSpec");
+require("./blinkyDancerClassSpec");
