@@ -1,6 +1,6 @@
 /* eslint-disable */
 const dancers = [];
-
+// 클릭이벤트
 function handleClickDancerButton () {
   /* makeBlinkyDancer is the dancer maker functions available in global scope.
   * A new object of the given type will be created and added

@@ -10,14 +10,13 @@ var makeBlinkyDancer = (top, left, timeBetweenSteps) => {
 
   let oldStep = blinkyDancer.step;
 
-  blinkyDancer.step = () => {
+  blinkyDancer.step = function() {
     // call the old version of step at the beginning of any call to this new version of step
     oldStep();
 
     let style = blinkyDancer.$node.style;
     style.display = style.display === 'none' ? 'inline-block' : 'none';
   };
-
   return blinkyDancer;
 };
 
